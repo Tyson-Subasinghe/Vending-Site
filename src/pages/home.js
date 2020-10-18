@@ -1,4 +1,5 @@
 import React from 'react';
+import Tooltip from '@material-ui/core/Tooltip';
 import styled from 'styled-components';
 import {isMobile} from "react-device-detect";
 import {motion} from "framer-motion";
@@ -6,6 +7,7 @@ import Logo from '../assets/logo.png';
 import healthyImage from '../assets/healthy.png';
 import drinkImage from '../assets/drinks.png';
 import snackImage from '../assets/snacks.png';
+
 
 
 
@@ -62,7 +64,6 @@ const Styles = styled.div`
     
   }
 
-
 .componentBox{
    
        
@@ -105,17 +106,21 @@ export const Home = () => {
                     
                     <div className="largeBreak"></div>
                     Sydney's first sustainable healthy vending company
+                    <div className="break"></div>
+                    Click on an icon to get started
                     <div className="largeBreak"></div>
                         
+                    <Tooltip title="Healthy Options">
+                        <motion.img src={healthyImage} className="icons" alt="Healthy options" whileHover={{ scale: 1.1 }} onClick={()=>{window.location='/healthyoptions'}}/>        
+                    </Tooltip>
                         
-                        <motion.img src={healthyImage} className="icons" alt="Healthy options" whileHover={{ scale: 1.1 }}/>        
-                        
-                       
-                        <motion.img src={drinkImage} className="icons" alt="Drinks" whileHover={{ scale: 1.1 }}/>
-                        
-                        
-                        <motion.img src={snackImage} className="icons" alt="Snacks" whileHover={{ scale: 1.1 }}/>
-                        
+                    <Tooltip title="Drinks" >
+                        <motion.img src={drinkImage} className="icons" alt="Drinks" whileHover={{ scale: 1.1 }} onClick={()=>{window.location='/drinks'}}/>
+                    </Tooltip>
+
+                    <Tooltip title="Snacks">
+                        <motion.img src={snackImage} className="icons" alt="Snacks" whileHover={{ scale: 1.1 }} onClick={()=>{window.location='/snacks'}}/>
+                    </Tooltip>
                         
                     <div className="largeBreak"></div>
                     

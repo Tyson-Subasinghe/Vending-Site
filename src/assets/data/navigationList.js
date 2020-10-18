@@ -21,7 +21,7 @@ const navList =[
       },
       {
         title: 'Healthy Options',
-        url: '/healthy',
+        url: '/healthyoptions',
         image: 'https://svgur.com/i/PVd.svg',
         number: '4',
       },
