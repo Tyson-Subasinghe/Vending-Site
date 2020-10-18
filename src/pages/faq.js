@@ -31,7 +31,7 @@ export const Faq = () => {
     <Styles>
         <div className="pageBox"> 
             
-                    404 error
+                    FAQ
         </div>
     </Styles>
     

@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import {isMobile} from "react-device-detect";
 import {motion} from "framer-motion";
 import Logo from '../assets/logo.png';
-import healthyImage from '../assets/healthy.png';
-import drinkImage from '../assets/drinks.png';
-import snackImage from '../assets/snacks.png';
+import healthyImage from '../assets/healthy.svg';
+import drinkImage from '../assets/drinks.svg';
+import snackImage from '../assets/snacks.svg';
 
 
 
@@ -125,7 +125,7 @@ export const Home = () => {
                     <div className="largeBreak"></div>
                     
                     <motion.a style={{fontWeight:'bold'}} whileHover={{ scale: 1.1 }} href={'/mission'}>
-                        About our mission
+                        Our mission
                     </motion.a>
                     
                 </div>

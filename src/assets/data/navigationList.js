@@ -14,8 +14,8 @@ const navList =[
         number: '2',
       },
       {
-        title: 'Our Machines',
-        url: '/mission',
+        title: 'Machines',
+        url: '/machines',
         image: 'https://svgur.com/i/PWX.svg',
         number: '3',
       },
@@ -39,12 +39,12 @@ const navList =[
       },
       {
         title: 'FAQ',
-        url: '/typeform',
+        url: '/faq',
         image: 'https://svgur.com/i/PWB.svg',
         number: '7',
       },
       {
-        title: 'Chat with us',
+        title: 'Talk to us',
         url: '/typeform',
         image: 'https://svgur.com/i/PWB.svg',
         number: '8',

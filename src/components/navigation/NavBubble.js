@@ -23,7 +23,7 @@ nav {
     left: 0;
     width: 300px;
     height: calc(100vh);
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(172,252,217, 0.95);
   }
   
   button {
@@ -81,7 +81,7 @@ nav {
     height: 35px;
     flex: 1;
     font-weight: bold;
-    color: #1fa82b;
+    color: #665687;
   }
   
   .refresh {
