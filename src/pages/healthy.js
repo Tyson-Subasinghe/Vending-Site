@@ -65,7 +65,7 @@ export const Healthy = () => {
                 
                 
                 <div className="componentBox"> 
-                    Health foods
+                    Healthy Options
                     <div className="largeBreak"></div>
                     We offer many health foods blah blah such as
                     <div className="largeBreak"></div>

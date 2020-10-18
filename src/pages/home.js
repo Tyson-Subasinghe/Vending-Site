@@ -1,7 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import {isMobile} from "react-device-detect";
-import Logo from '../assets/Logo.png';
+import {motion} from "framer-motion";
+import Logo from '../assets/logo.png';
+import healthyImage from '../assets/healthy.png';
+import drinkImage from '../assets/drinks.png';
+import snackImage from '../assets/snacks.png';
+
+
 
 const Styles = styled.div`
 
@@ -38,6 +44,25 @@ const Styles = styled.div`
     mouseEvents: none;
   }
 
+
+.icons{
+    position: relative;
+    ${isMobile ? 
+      `    
+      width: 30%;
+      top: 5%;
+      
+      `
+      :
+      `
+      width: 10%;
+      top: 5%;
+      `
+    }
+    
+  }
+
+
 .componentBox{
    
        
@@ -45,9 +70,15 @@ const Styles = styled.div`
         align-items: center;
         display: flex;
         flex-wrap: wrap;
+        
+        
     
 }
 
+.break {
+    flex-basis: 100%;
+    height: 2vh;
+}
 
 .largeBreak {
     flex-basis: 100%;
@@ -67,10 +98,30 @@ export const Home = () => {
                 
                 <div className="componentBox"> 
                     <img src={Logo} className="logo" alt="Vending.com.au Logo"/>
+                    <div className="break"></div>
+                    <div style={{fontWeight:'bold'}}>
+                        We are Vending.com.au
+                    </div>
+                    
                     <div className="largeBreak"></div>
-                    ITems 1
+                    Sydney's first sustainable healthy vending company
                     <div className="largeBreak"></div>
-                    Items 2
+                        
+                        
+                        <motion.img src={healthyImage} className="icons" alt="Healthy options" whileHover={{ scale: 1.1 }}/>        
+                        
+                       
+                        <motion.img src={drinkImage} className="icons" alt="Drinks" whileHover={{ scale: 1.1 }}/>
+                        
+                        
+                        <motion.img src={snackImage} className="icons" alt="Snacks" whileHover={{ scale: 1.1 }}/>
+                        
+                        
+                    <div className="largeBreak"></div>
+                    
+                    <motion.a style={{fontWeight:'bold'}} whileHover={{ scale: 1.1 }} href={'/mission'}>
+                        About our mission
+                    </motion.a>
                     
                 </div>
                 

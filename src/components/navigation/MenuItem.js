@@ -30,14 +30,14 @@ export const MenuItem = ({ i }) => {
   
   return (
     
-    <NavLink href={i.url} style={{color:"#000000"}} >
+    <NavLink href={i.url} style={{color:"rgba(0,0,0,0)"}} >
       <motion.li
         variants={variants}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
         <div className="icon-placeholder" ><img src={home} style={{width:'25px' }} alt="icon" /></div>
-        <div className="text-placeholder" style={{fontFamily: "ITCAvantGardeStd"}}>{i.title}</div>
+        <div className="text-placeholder" >{i.title}</div>
       </motion.li>
     </NavLink>
     

@@ -71,7 +71,7 @@ nav {
     height: 40px;
     border-radius: 50%;
     flex: 40px 0;
-    margin-right: 20px;
+    margin-right: 10px;
     margin-left: 10px;
   }
   
@@ -80,6 +80,8 @@ nav {
     width: 200px;
     height: 35px;
     flex: 1;
+    font-weight: bold;
+    color: #1fa82b;
   }
   
   .refresh {
