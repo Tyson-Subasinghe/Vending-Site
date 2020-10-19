@@ -35,7 +35,7 @@ const Styles = styled.div`
       `
       :
       `
-      width: 15%;
+      width: 12%;
       top: 5%;
       `
     }
@@ -99,7 +99,7 @@ export const Home = () => {
                 
                 <div className="componentBox"> 
                     <img src={Logo} className="logo" alt="Vending.com.au Logo"/>
-                    <div className="break"></div>
+                    <div className="largeBreak"></div>
                     <div style={{fontWeight:'bold'}}>
                         We are Vending.com.au
                     </div>
